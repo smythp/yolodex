@@ -1,0 +1,9 @@
+*~
+*#
+.#*
+*.pyc
+__pycache__/
+.python-version
+*.db
+*.backup
+key.py
