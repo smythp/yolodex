@@ -10,7 +10,26 @@
 
   <form method="POST">
 
-    {{ render_field(form.first_name, class="input", placeholder="First Name") }}
+    {{ render_field(form.first_name, class="input") }}
+    {{ render_field(form.middle_name, class="input") }}
+    {{ render_field(form.last_name, class="input") }}
+    {{ render_field(form.suffix, class="input") }}    
+    {{ render_field(form.nickname, class="input") }}
+    {{ render_field(form.title, class="input") }}
+    {{ render_field(form.birthday, class="input") }}
+    {{ render_field(form.secondary, class="input") }}
+    {{ render_field(form.email, class="input") }}
+    {{ render_field(form.phone, class="input") }}
+    {{ render_field(form.gender, class="input") }}
+    {{ render_field(form.address_1, class="input") }}
+    {{ render_field(form.address_2, class="input") }}
+    {{ render_field(form.city, class="input") }}
+    {{ render_field(form.zip, class="input") }}
+
+
+
+
+    
 
     {{ render_field(form.notes, rows="40", class="textarea is-large", placeholder="Notes") }}
 

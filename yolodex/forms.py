@@ -7,10 +7,6 @@ from datetime import datetime
 
 class CreateContactForm(Form):
 
-    name = StringField('Name', [
-        validators.DataRequired(),
-        ])
-
     first_name = StringField('First Name', [
         validators.DataRequired(),
         ])
@@ -21,7 +17,7 @@ class CreateContactForm(Form):
     ])
 
 
-    secondary = BooleanField('Birthday', [
+    secondary = BooleanField('Secondary Contact?', [
            validators.DataRequired(),
        ])
        
@@ -30,15 +26,15 @@ class CreateContactForm(Form):
     ])
 
     
-    firstname = StringField('First Name', [
+    first_name = StringField('First Name', [
         validators.DataRequired(),
     ])
 
-    lastname = StringField('Last Name', [
+    last_name = StringField('Last Name', [
         validators.DataRequired(),
     ])
 
-    middleName = StringField('Middle Name', [
+    middle_name = StringField('Middle Name', [
         validators.DataRequired(),
     ])
 
