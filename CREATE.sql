@@ -16,7 +16,7 @@ CREATE TABLE contacts (
        zip VARCHAR,
        title VARCHAR,
        email VARCHAR,
-       phone VARCHAR,
+       phone INTEGER,
        notes VARCHAR);
 
 

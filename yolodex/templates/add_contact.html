@@ -1,0 +1,29 @@
+{% from "_formhelpers_labeled.html" import render_field %}
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<main id="main">
+
+  <h1>Add Contact</h1>
+
+  <form method="POST">
+
+    {{ render_field(form.first_name, class="input", placeholder="First Name") }}
+
+    {{ render_field(form.notes, rows="40", class="textarea is-large", placeholder="Notes") }}
+
+
+
+    <button class="button">Submit</button>
+
+  </form>
+</main>
+
+
+  {% endblock %}
+
+
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Simple contact management tool">
+    {% if title %}
+    <title> {{ title }} - Yolodex</title>
+    {% else %}
+    <title>Yolodex</title>
+    {% endif %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    {% include 'resources.html' %}
+
+  </head>
+  <body>
+
+
+    {% include 'navigation.html' %}
+
+    <p>
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <div class="notification is-danger">
+	{{ messages[0] }}
+      </div>
+      {% endif %}
+      {% endwith %}
+    </p>
+
+
+
+    <div class="page-content">
+      {% block content %}{% endblock %}
+    </div>
+
+  </body>
+</html>
